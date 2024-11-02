@@ -25,11 +25,11 @@ const useStyles = createStyles((theme, params: { position?: TextUiPosition }) =>
     fontSize: 16,
     padding: 12,
     margin: 8,
-    backgroundColor: theme.colors.dark[6],
+    backgroundColor: theme.colors.dark,
     color: theme.colors.dark[0],
-    fontFamily: 'Roboto',
-    borderRadius: theme.radius.sm,
+    borderRadius: 11,
     boxShadow: theme.shadows.sm,
+    opacity: '86%',
   },
 }));
 

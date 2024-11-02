@@ -8,10 +8,11 @@ import type { ProgressbarProps } from '../../typings';
 const useStyles = createStyles((theme) => ({
   container: {
     width: 350,
-    height: 45,
-    borderRadius: theme.radius.sm,
-    backgroundColor: theme.colors.dark[5],
+    height: 35,
+    borderRadius: 11,
+    backgroundColor: theme.colors.dark,
     overflow: 'hidden',
+    opacity: '86%',
   },
   wrapper: {
     width: '100%',
@@ -21,6 +22,7 @@ const useStyles = createStyles((theme) => ({
     justifyContent: 'center',
     bottom: 0,
     position: 'absolute',
+    opacity: '86%',
   },
   bar: {
     height: '100%',
@@ -30,7 +32,7 @@ const useStyles = createStyles((theme) => ({
     position: 'absolute',
     display: 'flex',
     width: 350,
-    height: 45,
+    height: 35,
     alignItems: 'center',
     justifyContent: 'center',
   },

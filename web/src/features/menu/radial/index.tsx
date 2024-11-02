@@ -15,33 +15,31 @@ const useStyles = createStyles((theme) => ({
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
+    opacity: '86%',
   },
   sector: {
-    fill: theme.colors.dark[6],
+    fill: theme.colors.dark,
     color: theme.colors.dark[0],
 
     '&:hover': {
       fill: theme.fn.primaryColor(),
-      cursor: 'pointer',
       '> g > text, > g > svg > path': {
         fill: '#fff',
       },
     },
     '> g > text': {
       fill: theme.colors.dark[0],
-      strokeWidth: 0,
     },
   },
   backgroundCircle: {
-    fill: theme.colors.dark[6],
+    fill: theme.colors.dark,
   },
   centerCircle: {
     fill: theme.fn.primaryColor(),
     color: '#fff',
-    stroke: theme.colors.dark[6],
+    stroke: theme.colors.dark,
     strokeWidth: 4,
     '&:hover': {
-      cursor: 'pointer',
       fill: theme.colors[theme.primaryColor][theme.fn.primaryShade() - 1],
     },
   },

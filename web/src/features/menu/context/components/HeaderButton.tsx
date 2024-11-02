@@ -11,13 +11,20 @@ interface Props {
 
 const useStyles = createStyles((theme, params: { canClose?: boolean }) => ({
   button: {
-    borderRadius: 4,
+    borderRadius: 11,
     flex: '1 15%',
     alignSelf: 'stretch',
     height: 'auto',
     textAlign: 'center',
     justifyContent: 'center',
     padding: 2,
+    backgroundColor: theme.colors.dark,
+    '&:disabled': {
+      backgroundColor: theme.colors.dark[7]
+    },
+    '&:hover': {
+      backgroundColor: params.canClose ? undefined : theme.colors.dark[7],
+    },
   },
   root: {
     border: 'none',
