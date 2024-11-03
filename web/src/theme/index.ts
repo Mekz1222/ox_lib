@@ -1,7 +1,6 @@
 import { MantineThemeOverride } from '@mantine/core';
 
 export const theme: MantineThemeOverride = {
-  colorScheme: 'dark',
   colors: {
     'unknown': [
       "#e0fbff",
@@ -28,6 +27,7 @@ export const theme: MantineThemeOverride = {
       "#000000"
     ],
   },
+  colorScheme: 'dark',
   fontFamily: 'Source Code Pro',
   shadows: { sm: '1px 1px 3px rgba(0, 0, 0, 0.5)' },
   components: {
@@ -42,6 +42,60 @@ export const theme: MantineThemeOverride = {
       styles: {
         root: {
           opacity: '86%',
+          overlayColor: '#000000'
+        },
+        modal: {
+          background: '#000000',
+        },
+        
+      },
+    },
+    TextInput: {
+      styles: {
+        input: {
+          background: '#000000',
+        },
+      },
+    },
+    TimeInput: {
+      styles: {
+        input: {
+          background: '#000000',
+        },
+      },
+    },
+    Select: {
+      styles: {
+        input: {
+          background: '#000000',
+        },
+      },
+    },
+    MultiSelect: {
+      styles: {
+        input: {
+          background: '#000000',
+        },
+      },
+    },
+    NumberInput: {
+      styles: {
+        input: {
+          background: '#000000',
+        },
+      },
+    },
+    Checkbox: {
+      styles: {
+        input: {
+          background: '#000000',
+        },
+      },
+    },
+    PasswordInput: {
+      styles: {
+        input: {
+          background: '#000000',
         },
       },
     },
