@@ -20,10 +20,11 @@ const useStyles = createStyles((theme, params: { position: 'middle' | 'bottom'; 
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
+    opacity: '86%',
   },
   progress: {
     '> svg > circle:nth-child(1)': {
-      stroke: theme.colors.dark[5],
+      stroke: theme.colors.dark,
     },
     // Scuffed way of grabbing the first section and animating it
     '> svg > circle:nth-child(2)': {
@@ -34,7 +35,7 @@ const useStyles = createStyles((theme, params: { position: 'middle' | 'bottom'; 
   },
   value: {
     textAlign: 'center',
-    fontFamily: 'Roboto Mono',
+    fontFamily: 'roboto-mono',
     textShadow: theme.shadows.sm,
     color: theme.colors.gray[3],
   },
@@ -46,6 +47,7 @@ const useStyles = createStyles((theme, params: { position: 'middle' | 'bottom'; 
   },
   wrapper: {
     marginTop: params.position === 'middle' ? 25 : undefined,
+    opacity: '86%',
   },
 }));
 

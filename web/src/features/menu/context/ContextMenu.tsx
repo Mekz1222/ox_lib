@@ -20,6 +20,7 @@ const useStyles = createStyles((theme) => ({
     right: '25%',
     width: 320,
     height: 580,
+    opacity: '86%',
   },
   header: {
     justifyContent: 'center',
@@ -28,9 +29,9 @@ const useStyles = createStyles((theme) => ({
     gap: 6,
   },
   titleContainer: {
-    borderRadius: 4,
+    borderRadius: 11,
     flex: '1 85%',
-    backgroundColor: theme.colors.dark[6],
+    backgroundColor: theme.colors.dark,
   },
   titleText: {
     color: theme.colors.dark[0],

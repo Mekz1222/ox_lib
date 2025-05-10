@@ -28,8 +28,13 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
     height: 'fit-content',
     width: '100%',
     padding: 10,
+    backgroundColor: theme.colors.dark,
+    borderRadius: 11,
+    '&:disabled': {
+      backgroundColor: theme.colors.dark[8]
+    },
     '&:hover': {
-      backgroundColor: params.readOnly ? theme.colors.dark[6] : undefined,
+      backgroundColor: params.readOnly ? undefined : theme.colors.dark[7],
       cursor: params.readOnly ? 'unset' : 'pointer',
     },
     '&:active': {
@@ -45,11 +50,13 @@ const useStyles = createStyles((theme, params: { disabled?: boolean; readOnly?: 
   },
   dropdown: {
     padding: 10,
+    backgroundColor: theme.colors.dark,
     color: theme.colors.dark[0],
     fontSize: 14,
     maxWidth: 256,
     width: 'fit-content',
-    border: 'none',
+    borderRadius: 11,
+    border: 'none'
   },
   buttonStack: {
     gap: 4,

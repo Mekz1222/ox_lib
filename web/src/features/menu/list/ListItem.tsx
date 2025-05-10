@@ -15,13 +15,13 @@ interface Props {
 
 const useStyles = createStyles((theme, params: { iconColor?: string }) => ({
   buttonContainer: {
-    backgroundColor: theme.colors.dark[6],
+    backgroundColor: theme.colors.dark[8],
     borderRadius: theme.radius.md,
     padding: 2,
     height: 60,
     scrollMargin: 8,
     '&:focus': {
-      backgroundColor: theme.colors.dark[4],
+      backgroundColor: theme.colors.dark[6],
       outline: 'none',
     },
   },
